@@ -37,8 +37,8 @@ bot.on('kicked', function(reason) {
     console.log("I got kicked for", reason, "lol");
 
     bot = mineflayer.createBot({
-        host: 'node-it-free-01.tickhosting.com',
-        port: 50235,
+        host: 'node3.leourel.com',
+        port: 25935,
         username: 'LmaoBruh',
         version: "1.20.1"
     })
