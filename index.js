@@ -1,11 +1,9 @@
 
-
-
 const mineflayer = require('mineflayer')
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder')
 const GoalBlock = goals.GoalBlock
 
-
+console.log("success")
 const bot = mineflayer.createBot({
     host: 'node3.leourel.com',
     port: 25935,
@@ -14,7 +12,7 @@ const bot = mineflayer.createBot({
 })
 bot.loadPlugin(pathfinder)
 bot.once('spawn', () => {
-  
+  console.log("Logged in server")
   })
 bot.on('chat', (username, message) => {
     if (username === bot.username) return
