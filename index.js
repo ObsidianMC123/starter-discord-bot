@@ -4,7 +4,7 @@
 const mineflayer = require('mineflayer')
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder')
 const GoalBlock = goals.GoalBlock
-const { mineflayer: mineflayerViewer } = require('prismarine-viewer')
+
 
 const bot = mineflayer.createBot({
     host: 'node3.leourel.com',
@@ -14,7 +14,7 @@ const bot = mineflayer.createBot({
 })
 bot.loadPlugin(pathfinder)
 bot.once('spawn', () => {
-    mineflayerViewer(bot, { port: 8999, firstPerson: true })// port is the minecraft server port, if first person is false, you get a bird's-eye view
+  
   })
 bot.on('chat', (username, message) => {
     if (username === bot.username) return
